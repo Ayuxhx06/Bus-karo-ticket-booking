@@ -4,6 +4,9 @@
 ![Node](https://img.shields.io/badge/Node-v18+-green)
 ![React](https://img.shields.io/badge/React-18-blue)
 
+## 🚀 Live Demo
+**[https://bus-karo-ticket-booking.onrender.com/](https://bus-karo-ticket-booking.onrender.com/)**
+
 A full-stack bus booking application with real-time seat selection, authentication, and advanced booking features.
 
 ## 🌟 Features

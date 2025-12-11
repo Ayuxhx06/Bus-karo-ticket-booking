@@ -50,7 +50,7 @@ const BookingPage: React.FC = () => {
                     seatNumber: seat?.seat_number || 0,
                     name: existing?.name || '',
                     age: existing?.age || '',
-                    gender: existing?.gender || '',
+                    gender: (existing?.gender || '') as 'Male' | 'Female' | '',
                     meal: existing?.meal || 'No Meal',
                 };
             });
@@ -92,18 +92,7 @@ const BookingPage: React.FC = () => {
         );
     };
 
-    const canSelectSeat = (seat: Seat): boolean => {
-        if (seat.status !== 'AVAILABLE') return false;
 
-        // If it's a women-only seat
-        if (seat.is_women_only) {
-            // Check if any selected passenger is female
-            const hasFemalePassenger = passengers.some(p => p.gender === 'Female');
-            return hasFemalePassenger || selectedSeats.length === 0;
-        }
-
-        return true;
-    };
 
     const handleSeatToggle = (seat: Seat) => {
         if (seat.status !== 'AVAILABLE') return;

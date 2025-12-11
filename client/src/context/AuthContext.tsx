@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, ReactNode, useEffect } from 'react';
+import React, { createContext, useContext, useState, type ReactNode, useEffect } from 'react';
 
 interface User {
     id: number;
@@ -29,7 +29,7 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
         }
     }, []);
 
-    const login = async (email: string, password: string) => {
+    const login = async (email: string, _password: string) => {
         // Mock login - in real app, call API
         const mockUser: User = {
             id: 1,
@@ -41,7 +41,7 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
         localStorage.setItem('user', JSON.stringify(mockUser));
     };
 
-    const signup = async (name: string, email: string, password: string) => {
+    const signup = async (name: string, email: string, _password: string) => {
         // Mock signup - in real app, call API
         const mockUser: User = {
             id: Date.now(),

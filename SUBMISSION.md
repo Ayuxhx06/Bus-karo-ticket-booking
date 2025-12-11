@@ -1,5 +1,7 @@
 # Modex Assessment Submission - Bus Karo
 
+**Live Deployment URL:** [https://bus-karo-ticket-booking.onrender.com/](https://bus-karo-ticket-booking.onrender.com/)
+
 ## Deliverables Checklist
 
 ### ✅ Code
