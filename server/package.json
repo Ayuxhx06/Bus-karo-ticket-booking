@@ -8,6 +8,7 @@
     "build": "tsc",
     "start": "node dist/app.js",
     "seed": "ts-node src/database/seed.ts",
+    "start": "node dist/app.js",
     "test:concurrency": "ts-node src/utils/test-concurrency.ts"
   },
   "keywords": [],
